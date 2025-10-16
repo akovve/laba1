@@ -20,6 +20,8 @@
 
 Отнимал от символа '0' - в ASCII цифры идут подряд, поэтому получается число.
 
+<img width="456" height="165" alt="image" src="https://github.com/user-attachments/assets/91554fa5-121a-464e-affd-bca59c374532" />
+
 
 1_5
 Дана сигнатура функции: bool is2Digits (int x);
@@ -27,6 +29,9 @@
 x и возвращала true, если оно двузначное. 
 
 Просто проверял: число ≥ 10 и ≤ 99.
+
+<img width="448" height="150" alt="image" src="https://github.com/user-attachments/assets/f009f56d-78db-4f6c-a470-c98fcce016e3" />
+<img width="462" height="156" alt="image" src="https://github.com/user-attachments/assets/b89b154c-869a-459d-aacd-fc436be440b9" />
 
 
 1_7
@@ -39,6 +44,9 @@ x и возвращала true, если оно двузначное.
 
 Находил минимум и максимум из границ, проверял попадает ли число между ними.
 
+<img width="459" height="272" alt="image" src="https://github.com/user-attachments/assets/9b87199d-08f8-407f-a3a0-a86be1488042" />
+<img width="456" height="272" alt="image" src="https://github.com/user-attachments/assets/bcbc8fb1-9dae-4cf4-9887-f11b251ac65f" />
+
 
 1_9
 Дана сигнатура функции: bool isEqual(int a, int b, int c);
@@ -46,6 +54,9 @@ x и возвращала true, если оно двузначное.
 если все три полученных функцией числа равны
 
 Сравнивал первое со вторым и второе с третьим - если оба true, значит все равны.
+
+<img width="447" height="194" alt="image" src="https://github.com/user-attachments/assets/dfe65b30-0237-44a0-b122-933f0208e519" />
+<img width="470" height="251" alt="image" src="https://github.com/user-attachments/assets/6f3c4658-5277-4684-b823-4ff27ca9842d" />
 
 
 2_1
@@ -56,6 +67,7 @@ x и возвращала true, если оно двузначное.
 
 Если число отрицательное - умножаю на -1, иначе оставляю как есть.
 
+<img width="444" height="157" alt="image" src="https://github.com/user-attachments/assets/d0d541a7-ac80-46bf-a846-d1134c2ca231" />
 
 2_3
 Дана сигнатура функции: bool is35 (int x);
@@ -66,6 +78,10 @@ x и возвращала true, если оно двузначное.
 
 Проверял остаток от деления на 3 и на 5. Возвращал true если делится на один ИЛИ другой, но НЕ на оба.
 
+<img width="457" height="148" alt="image" src="https://github.com/user-attachments/assets/16f52bb7-2b36-4d26-a44d-6b527ff605be" />
+<img width="448" height="159" alt="image" src="https://github.com/user-attachments/assets/9fc959c2-8724-4282-816f-d0a518a0ed51" />
+
+
 
 2_5
 Дана сигнатура функции: int max3 (int x, int y, int z);
@@ -75,6 +91,8 @@ x и возвращала true, если оно двузначное.
 
 Брал первое число за максимум, сравнивал со вторым, потом с третьим, обновлял если находил больше.
 
+<img width="520" height="207" alt="image" src="https://github.com/user-attachments/assets/bc1ab42e-3106-4704-995a-364333e64362" />
+
 
 2_7
 Дана сигнатура функции: int sum2 (int x, int y);
@@ -83,6 +101,9 @@ x и возвращала true, если оно двузначное.
 вернуть число 20. 
 
 Складывал числа, если сумма от 10 до 19 - возвращал 20, иначе обычную сумму.
+
+<img width="460" height="236" alt="image" src="https://github.com/user-attachments/assets/f29015e7-baf6-42e2-9202-26f182d2dd49" />
+<img width="473" height="239" alt="image" src="https://github.com/user-attachments/assets/1552593a-f859-4fec-b0b2-20ccd10a679c" />
 
 
 2_9
@@ -95,6 +116,10 @@ x и возвращала true, если оно двузначное.
 
 Switch-case: 1-понедельник, 2-вторник и т.д., для других чисел - ошибка.
 
+<img width="464" height="152" alt="image" src="https://github.com/user-attachments/assets/9a17e329-9ba0-47eb-aabc-84d553c1b111" />
+<img width="450" height="155" alt="image" src="https://github.com/user-attachments/assets/de21ab93-27c1-4e16-a53b-eb951a731570" />
+
+
 
 3_1
 Дана сигнатура функции: String listNums (int x);
@@ -102,6 +127,8 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 строку, в которой будут записаны все числа от 0 до x (включительно).
 
 Цикл от 0 до X, добавлял числа в строку через пробел.
+
+<img width="463" height="159" alt="image" src="https://github.com/user-attachments/assets/4abcd706-1364-4a1f-a4df-e48cfe899e60" />
 
 
 3_3
@@ -113,6 +140,7 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 
 Цикл с шагом 2: 0, 2, 4, 6... до X.
 
+<img width="625" height="166" alt="image" src="https://github.com/user-attachments/assets/90e01f00-f352-4591-a9e1-daa046e71ef7" />
 
 3_5
 Дана сигнатура функции: int numLen (long x);
@@ -121,6 +149,8 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 
 Делил число на 10 пока не станет 0, считал сколько раз поделилось.
 
+<img width="462" height="151" alt="image" src="https://github.com/user-attachments/assets/98e78504-aaaa-4b09-bd1d-daca7ac4838a" />
+<img width="458" height="159" alt="image" src="https://github.com/user-attachments/assets/c6f2f750-b2eb-42c5-9516-80aca4debaeb" />
 
 3_7
 Дана сигнатура функции: void square (int x);
@@ -130,6 +160,7 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 
 Два цикла: внешний для строк, внутренний для столбцов, в каждой ячейке звездочка.
 
+<img width="530" height="307" alt="image" src="https://github.com/user-attachments/assets/810113a0-86b1-42f0-8b1c-a4f109fcda1b" />
 
 3_9
 Дана сигнатура функции: void rightTriangle (int x);
@@ -141,6 +172,7 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 
 Сначала пробелы (чем ниже строка, тем меньше пробелов), потом звездочки.
 
+<img width="518" height="330" alt="image" src="https://github.com/user-attachments/assets/e8227c9b-a024-4178-8c97-615634e3a507" />
 
 4_1
 Дана сигнатура функции: int findFirst (int arr[], int x);
@@ -150,6 +182,7 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 
 Проходил по массиву, сравнивал каждый элемент с искомым, возвращал индекс первого совпадения.
 
+<img width="642" height="212" alt="image" src="https://github.com/user-attachments/assets/80ffe5e5-5b7b-45db-be4a-1045d6bffb35" />
 
 4_3
 Дана сигнатура функции: int maxAbs (int arr[]);
@@ -157,5 +190,7 @@ Switch-case: 1-понедельник, 2-вторник и т.д., для дру
 наибольшее по модулю (то есть без учета знака) значение массива arr.
 
 Сравнивал модули элементов, находил самый большой, возвращал исходное значение (со знаком).
+
+<img width="568" height="206" alt="image" src="https://github.com/user-attachments/assets/eacb0d43-b3d8-453a-a910-d6611ec32e71" />
 
 на этом все
