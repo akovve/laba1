@@ -8,6 +8,8 @@
 
 Брал число, отбрасывал целую часть через преобразование в int, остаток - дробная часть.
 
+<img width="438" height="170" alt="image" src="https://github.com/user-attachments/assets/7da825cf-b40f-4b79-9809-0287443e9717" />
+
 
 1_3
 Дана сигнатура функции: int charToNum (char x);
