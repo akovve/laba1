@@ -3,12 +3,6 @@
 #include <cstdlib>
 #include <ctime>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-using std::to_string;
-
 // Zadanie 1_1
 double Fraction(double num1) {
     int inter_part = static_cast<int>(num1);
@@ -18,31 +12,31 @@ double Fraction(double num1) {
 int main1_1() {
     double number;
     
-    cout << "Введите число: ";
-    cin >> number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
     
     double result = Fraction(number);
     
-    cout << "Дробная часть числа " << number << " = " << result << endl;
+    std::cout << "Дробная часть числа " << number << " = " << result << std::endl;
     
     return 0;
 }
 
 // Zadanie 1_3
 int CharToNum(char num2) { 
-    return num2 - '0'; 
+    return num2 - '0';
 }
 
 int main1_3() {
     char ch;
-    cout << "Введите цифру: ";
-    cin >> ch;
+    std::cout << "Введите цифру: ";
+    std::cin >> ch;
     
     if (ch >= '0' && ch <= '9') {
         int number = CharToNum(ch);
-        cout << "Результат: " << number << endl;
+        std::cout << "Результат: " << number << std::endl;
     } else {
-        cout << "Ошибка: введен не цифровой символ!" << endl;
+        std::cout << "Ошибка: введен не цифровой символ!" << std::endl;
     }
     
     return 0;
@@ -56,12 +50,12 @@ bool Is2Digits(int num3) {
 int main1_5() {
     int number;
     
-    cout << "Введите число: ";
-    cin >> number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
     
     bool result = Is2Digits(number);
     
-    cout << "Результат: " << (result ? "true" : "false") << endl;
+    std::cout << "Результат: " << (result ? "true" : "false") << std::endl;
     
     return 0;
 }
@@ -74,22 +68,24 @@ bool IsInRange(int a, int b, int num4) {
 }
 
 int main1_7() {
-    int a, b, num;
+    int a = 0;
+    int b = 0;
+    int num = 0;
     
-    cout << "Введите левую границу: ";
-    cin >> a;
-    cout << "Введите правую границу: ";
-    cin >> b;
-    cout << "Введите число: ";
-    cin >> num;
+    std::cout << "Введите левую границу: ";
+    std::cin >> a;
+    std::cout << "Введите правую границу: ";
+    std::cin >> b;
+    std::cout << "Введите число: ";
+    std::cin >> num;
     
     bool result = IsInRange(a, b, num);
     int min_val = (a < b) ? a : b;
     int max_val = (a > b) ? a : b;
     
-    cout << "Диапазон: [" << min_val << ", " << max_val << "]" << endl;
-    cout << "Число: " << num << endl;
-    cout << "Результат: " << (result ? "true" : "false") << endl;
+    std::cout << "Диапазон: [" << min_val << ", " << max_val << "]" << std::endl;
+    std::cout << "Число: " << num << std::endl;
+    std::cout << "Результат: " << (result ? "true" : "false") << std::endl;
     
     return 0;
 }
@@ -100,19 +96,21 @@ bool IsEqual(int c, int d, int e) {
 }
 
 int main1_9() {
-    int a, b, c;
+    int a = 0; 
+    int b = 0;
+    int c = 0;
     
-    cout << "Введите три числа:" << endl;
-    cout << "a = ";
-    cin >> a;
-    cout << "b = ";
-    cin >> b;
-    cout << "c = ";
-    cin >> c;
+    std::cout << "Введите три числа:" << std::endl;
+    std::cout << "a = ";
+    std::cin >> a;
+    std::cout << "b = ";
+    std::cin >> b;
+    std::cout << "c = ";
+    std::cin >> c;
     
     bool result = IsEqual(a, b, c);
     
-    cout << "Результат: " << (result ? "true" : "false") << endl;
+    std::cout << "Результат: " << (result ? "true" : "false") << std::endl;
     
     return 0;
 }
@@ -129,12 +127,12 @@ int Abs(int x6) {
 int main2_1() {
     int number;
     
-    cout << "Введите число: ";
-    cin >> number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
     
     int result = Abs(number);
     
-    cout << "Модуль числа " << number << " равен: " << result << endl;
+    std::cout << "Модуль числа " << number << " равен: " << result << std::endl;
     
     return 0;
 }
@@ -147,12 +145,12 @@ bool Is35(int x7) {
 int main2_3() {
     int number;
     
-    cout << "Введите число: ";
-    cin >> number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
     
     bool result = Is35(number);
     
-    cout << "Результат: " << (result ? "true" : "false") << endl;
+    std::cout << "Результат: " << (result ? "true" : "false") << std::endl;
     
     return 0;
 }
@@ -166,20 +164,22 @@ int Max3(int x8, int y8, int z8) {
 }
 
 int main2_5() {
-    int x, y, z;
+    int x = 0; 
+    int y = 0; 
+    int z = 0;
     
-    cout << "Введите три числа:" << endl;
-    cout << "x = ";
-    cin >> x;
-    cout << "y = ";
-    cin >> y;
-    cout << "z = ";
-    cin >> z;
+    std::cout << "Введите три числа:" << std::endl;
+    std::cout << "x = ";
+    std::cin >> x;
+    std::cout << "y = ";
+    std::cin >> y;
+    std::cout << "z = ";
+    std::cin >> z;
     
     int result = Max3(x, y, z);
     
-    cout << "Максимальное из чисел " << x << ", " << y << ", " << z 
-         << " равно: " << result << endl;
+    std::cout << "Максимальное из чисел " << x << ", " << y << ", " << z 
+         << " равно: " << result << std::endl;
     
     return 0;
 }
@@ -194,25 +194,26 @@ int Sum2(int x9, int y9) {
 }
 
 int main2_7() {
-    int x, y;
+    int x = 0; 
+    int y = 0;
     
-    cout << "Введите два числа:" << endl;
-    cout << "x = ";
-    cin >> x;
-    cout << "y = ";
-    cin >> y;
+    std::cout << "Введите два числа:" << std::endl;
+    std::cout << "x = ";
+    std::cin >> x;
+    std::cout << "y = ";
+    std::cin >> y;
     
     int result = Sum2(x, y);
     int actualSum = x + y;
     
-    cout << "Сумма чисел " << x << " + " << y << " = " << actualSum << endl;
-    cout << "Результат функции Sum2: " << result << endl;
+    std::cout << "Сумма чисел " << x << " + " << y << " = " << actualSum << std::endl;
+    std::cout << "Результат функции Sum2: " << result << std::endl;
     
     return 0;
 }
 
 // Zadanie 2_9
-string Day(int x10) {
+std::string Day(int x10) {
     switch (x10) {
         case 1: 
             return "понедельник";
@@ -236,21 +237,21 @@ string Day(int x10) {
 int main2_9() {
     int dayNumber;
     
-    cout << "Введите номер дня недели (1-7): ";
-    cin >> dayNumber;
+    std::cout << "Введите номер дня недели (1-7): ";
+    std::cin >> dayNumber;
     
-    string result = Day(dayNumber);
+    std::string result = Day(dayNumber);
     
-    cout << "Результат: " << result << endl;
+    std::cout << "Результат: " << result << std::endl;
     
     return 0;
 }
 
 // Zadanie 3_1
-string ListNums(int x) {
-    string result = "";
+std::string ListNums(int x) {
+    std::string result = "";
     for (int i = 0; i <= x; i++) {
-        result += to_string(i);
+        result += std::to_string(i);
         if (i < x) {
             result += " ";
         }
@@ -261,21 +262,21 @@ string ListNums(int x) {
 int main3_1() {
     int number;
     
-    cout << "Введите число x: ";
-    cin >> number;
+    std::cout << "Введите число x: ";
+    std::cin >> number;
     
-    string result = ListNums(number);
+    std::string result = ListNums(number);
     
-    cout << "Результат: \"" << result << "\"" << endl;
+    std::cout << "Результат: \"" << result << "\"" << std::endl;
     
     return 0;
 }
 
 // Zadanie 3_3
-string Chet(int x) {
-    string result = "";
+std::string Chet(int x) {
+    std::string result = "";
     for (int i = 0; i <= x; i += 2) {
-        result += to_string(i);
+        result += std::to_string(i);
         if (i < x - 1) {
             result += " ";
         }
@@ -286,12 +287,12 @@ string Chet(int x) {
 int main3_3() {
     int number;
     
-    cout << "Введите число x: ";
-    cin >> number;
+    std::cout << "Введите число x: ";
+    std::cin >> number;
     
-    string result = Chet(number);
+    std::string result = Chet(number);
     
-    cout << "Четные числа от 0 до " << number << ": \"" << result << "\"" << endl;
+    std::cout << "Четные числа от 0 до " << number << ": \"" << result << "\"" << std::endl;
     
     return 0;
 }
@@ -315,12 +316,12 @@ int NumLen(long x) {
 int main3_5() {
     long number;
     
-    cout << "Введите число: ";
-    cin >> number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
     
     int length = NumLen(number);
     
-    cout << "Количество цифр в числе " << number << ": " << length << endl;
+    std::cout << "Количество цифр в числе " << number << ": " << length << std::endl;
     
     return 0;
 }
@@ -329,19 +330,19 @@ int main3_5() {
 void Square(int x) {
     for (int i = 0; i < x; i++) {
         for (int j = 0; j < x; j++) {
-            cout << "*";
+            std::cout << "*";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
 int main3_7() {
     int size;
     
-    cout << "Введите размер квадрата: ";
-    cin >> size;
+    std::cout << "Введите размер квадрата: ";
+    std::cin >> size;
     
-    cout << "Квадрат " << size << "x" << size << ":" << endl;
+    std::cout << "Квадрат " << size << "x" << size << ":" << std::endl;
     Square(size);
     
     return 0;
@@ -351,22 +352,22 @@ int main3_7() {
 void RightTriangle(int x) {
     for (int i = 1; i <= x; i++) {
         for (int j = 0; j < x - i; j++) {
-            cout << " ";
+            std::cout << " ";
         }
         for (int k = 0; k < i; k++) {
-            cout << "*";
+            std::cout << "*";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
 int main3_9() {
     int height;
     
-    cout << "Введите высоту треугольника: ";
-    cin >> height;
+    std::cout << "Введите высоту треугольника: ";
+    std::cin >> height;
     
-    cout << "Правый треугольник высотой " << height << ":" << endl;
+    std::cout << "Правый треугольник высотой " << height << ":" << std::endl;
     RightTriangle(height);
     
     return 0;
@@ -383,39 +384,39 @@ int FindFirst(int arr[], int size, int x) {
 }
 
 int main4_1() {
-    srand(time(NULL));
+    std::srand(std::time(NULL));
     
-    int size;
-    cout << "Введите размер массива: ";
-    cin >> size;
+    int size = 0;
+    std::cout << "Введите размер массива: ";
+    std::cin >> size;
     
     if (size <= 0) {
-        cout << "Размер массива должен быть положительным числом!" << endl;
+        std::cout << "Размер массива должен быть положительным числом!" << std::endl;
         return 1;
     }
     
     int* arr = new int[size];
     
     for (int i = 0; i < size; i++) {
-        arr[i] = rand() % 100;
+        arr[i] = std::rand() % 100;
     }
     
-    cout << "Сгенерированный массив: ";
+    std::cout << "Сгенерированный массив: ";
     for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
+        std::cout << arr[i] << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
     
-    int x;
-    cout << "Введите число для поиска: ";
-    cin >> x;
+    int x = 0;
+    std::cout << "Введите число для поиска: ";
+    std::cin >> x;
     
     int index = FindFirst(arr, size, x);
     
     if (index != -1) {
-        cout << "Первое вхождение числа " << x << " найдено по индексу: " << index << endl;
+        std::cout << "Первое вхождение числа " << x << " найдено по индексу: " << index << std::endl;
     } else {
-        cout << "Число " << x << " не найдено в массиве" << endl;
+        std::cout << "Число " << x << " не найдено в массиве" << std::endl;
     }
     
     delete[] arr;
@@ -439,32 +440,32 @@ int MaxAbs(int arr[], int size) {
 }
 
 int main4_3() {
-    srand(time(NULL));
+    std::srand(std::time(NULL));
     
-    int size;
-    cout << "Введите размер массива: ";
-    cin >> size;
+    int size = 0;
+    std::cout << "Введите размер массива: ";
+    std::cin >> size;
     
     if (size <= 0) {
-        cout << "Размер массива должен быть положительным числом!" << endl;
+        std::cout << "Размер массива должен быть положительным числом!" << std::endl;
         return 1;
     }
     
     int* arr = new int[size];
     
     for (int i = 0; i < size; i++) {
-        arr[i] = rand() % 201 - 100;
+        arr[i] = std::rand() % 201 - 100;
     }
     
-    cout << "Сгенерированный массив: ";
+    std::cout << "Сгенерированный массив: ";
     for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
+        std::cout << arr[i] << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
     
     int result = MaxAbs(arr, size);
-    cout << "Наибольшее по модулю значение: " << result << endl;
-    cout << "Его модуль: " << Abs(result) << endl;
+    std::cout << "Наибольшее по модулю значение: " << result << std::endl;
+    std::cout << "Его модуль: " << Abs(result) << std::endl;
     
     delete[] arr;
     
@@ -472,34 +473,34 @@ int main4_3() {
 }
 
 void showMenu() {
-    cout << "\n=== ГЛАВНОЕ МЕНЮ ===" << endl;
-    cout << "1 - задача 1_1" << endl;
-    cout << "2 - задача 1_3" << endl;
-    cout << "3 - задача 1_5" << endl;
-    cout << "4 - задача 1_7" << endl;
-    cout << "5 - задача 1_9" << endl;
-    cout << "6 - задача 2_1" << endl;
-    cout << "7 - задача 2_3" << endl;
-    cout << "8 - задача 2_5" << endl;
-    cout << "9 - задача 2_7" << endl;
-    cout << "10 - задача 2_9" << endl;
-    cout << "11 - задача 3_1" << endl;
-    cout << "12 - задача 3_3" << endl;
-    cout << "13 - задача 3_5" << endl;
-    cout << "14 - задача 3_7" << endl;
-    cout << "15 - задача 3_9" << endl;
-    cout << "16 - задача 4_1" << endl;
-    cout << "17 - задача 4_3" << endl;
-    cout << "0 - Выход" << endl;
-    cout << "Выберите задачу: ";
+    std::cout << "\n=== ГЛАВНОЕ МЕНЮ ===" << std::endl;
+    std::cout << "1 - задача 1_1" << std::endl;
+    std::cout << "2 - задача 1_3" << std::endl;
+    std::cout << "3 - задача 1_5" << std::endl;
+    std::cout << "4 - задача 1_7" << std::endl;
+    std::cout << "5 - задача 1_9" << std::endl;
+    std::cout << "6 - задача 2_1" << std::endl;
+    std::cout << "7 - задача 2_3" << std::endl;
+    std::cout << "8 - задача 2_5" << std::endl;
+    std::cout << "9 - задача 2_7" << std::endl;
+    std::cout << "10 - задача 2_9" << std::endl;
+    std::cout << "11 - задача 3_1" << std::endl;
+    std::cout << "12 - задача 3_3" << std::endl;
+    std::cout << "13 - задача 3_5" << std::endl;
+    std::cout << "14 - задача 3_7" << std::endl;
+    std::cout << "15 - задача 3_9" << std::endl;
+    std::cout << "16 - задача 4_1" << std::endl;
+    std::cout << "17 - задача 4_3" << std::endl;
+    std::cout << "0 - Выход" << std::endl;
+    std::cout << "Выберите задачу: ";
 }
 
 int main() {
-    int choice;
+    int choice = 0;
     
     do {
         showMenu();
-        cin >> choice;
+        std::cin >> choice;
         
         switch(choice) {
             case 1:
@@ -554,17 +555,17 @@ int main() {
                 main4_3();
                 break;
             case 0:
-                cout << "Выход из программы..." << endl;
+                std::cout << "Выход из программы..." << std::endl;
                 break;
             default:
-                cout << "Неверный выбор! Попробуйте снова." << endl;
+                std::cout << "Неверный выбор! Попробуйте снова." << std::endl;
                 break;
         }
         
         if (choice != 0) {
-            cout << "\nНажмите Enter для продолжения...";
-            cin.ignore();
-            cin.get();
+            std::cout << "\nНажмите Enter для продолжения...";
+            std::cin.ignore();
+            std::cin.get();
         }
         
     } while (choice != 0);
